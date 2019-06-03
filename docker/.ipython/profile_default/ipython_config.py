@@ -32,7 +32,6 @@
 c.InteractiveShellApp.exec_lines = [
     '%config InlineBackend.figure_format = "retina"',
     'import sys',
-    'sys.path.append("/Users/yogai/develop/data_analysis/")',
     'import pandas as pd',
     'import numpy as np',
     'from sklearn.cluster import KMeans',
