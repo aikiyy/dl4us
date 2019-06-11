@@ -4,9 +4,7 @@ ARG work_dir="/home/jovyan"
 WORKDIR ${work_dir}
 
 USER root
-RUN apt-get dist-upgrade
-RUN apt-get update
-RUN apt-get install -y build-essential graphviz-dev graphviz pkg-config
+RUN apt-get update && apt-get install -y build-essential graphviz-dev graphviz pkg-config
 
 USER jovyan
 #RUN pip install --upgrade pip
